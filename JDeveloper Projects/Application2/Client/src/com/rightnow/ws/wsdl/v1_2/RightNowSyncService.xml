@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns2="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname namespaceURI="urn:wsdl.ws.rightnow.com/v1_2"
+                     localpart="RightNowSyncService"/>
+      <port-info>
+         <wsdl-port namespaceURI="urn:wsdl.ws.rightnow.com/v1_2"
+                    localpart="RightNowFedAuthSyncPort"/>
+         <runtime/>
+         <policy-references>
+            <policy-reference category="security"
+                              uri="oracle/wss_username_token_client_policy"/>
+         </policy-references>
+         <operations>
+            <operation name="create"/>
+            <operation name="get"/>
+            <operation name="update"/>
+            <operation name="destroy"/>
+            <operation name="queryObjects"/>
+            <operation name="queryCSV"/>
+            <operation name="runAnalyticsReport"/>
+            <operation name="executeMarketingFlow"/>
+            <operation name="getFileData"/>
+            <operation name="resetContactPassword"/>
+            <operation name="sendMailingToContact"/>
+            <operation name="transferSubObjects"/>
+            <operation name="batch"/>
+            <operation name="getMetaData"/>
+            <operation name="getMetaDataForClass"/>
+            <operation name="getMetaDataLastChangeTime"/>
+            <operation name="getValuesForNamedID"/>
+            <operation name="getValuesForNamedIDHierarchy"/>
+            <operation name="convertGenericToObject"/>
+            <operation name="convertObjectToGeneric"/>
+         </operations>
+      </port-info>
+      <port-info>
+         <wsdl-port namespaceURI="urn:wsdl.ws.rightnow.com/v1_2"
+                    localpart="RightNowSyncPort"/>
+         <runtime/>
+         <policy-references>
+            <policy-reference category="security"
+                              uri="oracle/wss_username_token_client_policy"/>
+         </policy-references>
+         <operations>
+            <operation name="create"/>
+            <operation name="get"/>
+            <operation name="update"/>
+            <operation name="destroy"/>
+            <operation name="queryObjects"/>
+            <operation name="queryCSV"/>
+            <operation name="runAnalyticsReport"/>
+            <operation name="executeMarketingFlow"/>
+            <operation name="getFileData"/>
+            <operation name="resetContactPassword"/>
+            <operation name="sendMailingToContact"/>
+            <operation name="transferSubObjects"/>
+            <operation name="batch"/>
+            <operation name="getMetaData"/>
+            <operation name="getMetaDataForClass"/>
+            <operation name="getMetaDataLastChangeTime"/>
+            <operation name="getValuesForNamedID"/>
+            <operation name="getValuesForNamedIDHierarchy"/>
+            <operation name="convertGenericToObject"/>
+            <operation name="convertObjectToGeneric"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>

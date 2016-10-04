@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AllAllTables"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="ALL_ALL_TABLES"
+  AliasName="AllAllTables"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="Owner"
+    Precision="30"
+    ColumnName="OWNER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="TableName"
+    Precision="30"
+    ColumnName="TABLE_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="TablespaceName"
+    Precision="30"
+    ColumnName="TABLESPACE_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ClusterName"
+    Precision="30"
+    ColumnName="CLUSTER_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="IotName"
+    Precision="30"
+    ColumnName="IOT_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Status"
+    Precision="8"
+    ColumnName="STATUS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PctFree"
+    ColumnName="PCT_FREE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="PctUsed"
+    ColumnName="PCT_USED"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="IniTrans"
+    ColumnName="INI_TRANS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="MaxTrans"
+    ColumnName="MAX_TRANS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="InitialExtent"
+    ColumnName="INITIAL_EXTENT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="NextExtent"
+    ColumnName="NEXT_EXTENT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="MinExtents"
+    ColumnName="MIN_EXTENTS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="MaxExtents"
+    ColumnName="MAX_EXTENTS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="PctIncrease"
+    ColumnName="PCT_INCREASE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Freelists"
+    ColumnName="FREELISTS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="FreelistGroups"
+    ColumnName="FREELIST_GROUPS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Logging"
+    Precision="3"
+    ColumnName="LOGGING"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="BackedUp"
+    Precision="1"
+    ColumnName="BACKED_UP"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="NumRows"
+    ColumnName="NUM_ROWS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Blocks"
+    ColumnName="BLOCKS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="EmptyBlocks"
+    ColumnName="EMPTY_BLOCKS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="AvgSpace"
+    ColumnName="AVG_SPACE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="ChainCnt"
+    ColumnName="CHAIN_CNT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="AvgRowLen"
+    ColumnName="AVG_ROW_LEN"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="AvgSpaceFreelistBlocks"
+    ColumnName="AVG_SPACE_FREELIST_BLOCKS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="NumFreelistBlocks"
+    ColumnName="NUM_FREELIST_BLOCKS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Degree"
+    Precision="40"
+    ColumnName="DEGREE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="40"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Instances"
+    Precision="40"
+    ColumnName="INSTANCES"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="40"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Cache"
+    Precision="20"
+    ColumnName="CACHE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="TableLock"
+    Precision="8"
+    ColumnName="TABLE_LOCK"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SampleSize"
+    ColumnName="SAMPLE_SIZE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="LastAnalyzed"
+    ColumnName="LAST_ANALYZED"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Partitioned"
+    Precision="3"
+    ColumnName="PARTITIONED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="IotType"
+    Precision="12"
+    ColumnName="IOT_TYPE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="12"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ObjectIdType"
+    Precision="16"
+    ColumnName="OBJECT_ID_TYPE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="TableTypeOwner"
+    Precision="120"
+    ColumnName="TABLE_TYPE_OWNER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="120"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="TableType"
+    Precision="30"
+    ColumnName="TABLE_TYPE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Temporary"
+    Precision="1"
+    ColumnName="TEMPORARY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Secondary"
+    Precision="1"
+    ColumnName="SECONDARY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Nested"
+    Precision="3"
+    ColumnName="NESTED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="BufferPool"
+    Precision="7"
+    ColumnName="BUFFER_POOL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="FlashCache"
+    Precision="7"
+    ColumnName="FLASH_CACHE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CellFlashCache"
+    Precision="7"
+    ColumnName="CELL_FLASH_CACHE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="RowMovement"
+    Precision="8"
+    ColumnName="ROW_MOVEMENT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="GlobalStats"
+    Precision="3"
+    ColumnName="GLOBAL_STATS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="UserStats"
+    Precision="3"
+    ColumnName="USER_STATS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Duration"
+    Precision="15"
+    ColumnName="DURATION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="15"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SkipCorrupt"
+    Precision="8"
+    ColumnName="SKIP_CORRUPT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Monitoring"
+    Precision="3"
+    ColumnName="MONITORING"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ClusterOwner"
+    Precision="30"
+    ColumnName="CLUSTER_OWNER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Dependencies"
+    Precision="8"
+    ColumnName="DEPENDENCIES"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Compression"
+    Precision="8"
+    ColumnName="COMPRESSION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CompressFor"
+    Precision="12"
+    ColumnName="COMPRESS_FOR"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="12"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Dropped"
+    Precision="3"
+    ColumnName="DROPPED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SegmentCreated"
+    Precision="3"
+    ColumnName="SEGMENT_CREATED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ALL_ALL_TABLES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="AllalltablesPrimaryKey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="ALLALLTABLES_PRIMARY_KEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.AllAllTables.Owner"/>
+      <Item Value="model.AllAllTables.TableName"/>
+      <Item Value="model.AllAllTables.TablespaceName"/>
+      <Item Value="model.AllAllTables.ClusterName"/>
+      <Item Value="model.AllAllTables.IotName"/>
+      <Item Value="model.AllAllTables.Status"/>
+      <Item Value="model.AllAllTables.PctFree"/>
+      <Item Value="model.AllAllTables.PctUsed"/>
+      <Item Value="model.AllAllTables.IniTrans"/>
+      <Item Value="model.AllAllTables.MaxTrans"/>
+      <Item Value="model.AllAllTables.InitialExtent"/>
+      <Item Value="model.AllAllTables.NextExtent"/>
+      <Item Value="model.AllAllTables.MinExtents"/>
+      <Item Value="model.AllAllTables.MaxExtents"/>
+      <Item Value="model.AllAllTables.PctIncrease"/>
+      <Item Value="model.AllAllTables.Freelists"/>
+      <Item Value="model.AllAllTables.FreelistGroups"/>
+      <Item Value="model.AllAllTables.Logging"/>
+      <Item Value="model.AllAllTables.BackedUp"/>
+      <Item Value="model.AllAllTables.NumRows"/>
+      <Item Value="model.AllAllTables.Blocks"/>
+      <Item Value="model.AllAllTables.EmptyBlocks"/>
+      <Item Value="model.AllAllTables.AvgSpace"/>
+      <Item Value="model.AllAllTables.ChainCnt"/>
+      <Item Value="model.AllAllTables.AvgRowLen"/>
+      <Item Value="model.AllAllTables.AvgSpaceFreelistBlocks"/>
+      <Item Value="model.AllAllTables.NumFreelistBlocks"/>
+      <Item Value="model.AllAllTables.Degree"/>
+      <Item Value="model.AllAllTables.Instances"/>
+      <Item Value="model.AllAllTables.Cache"/>
+      <Item Value="model.AllAllTables.TableLock"/>
+      <Item Value="model.AllAllTables.SampleSize"/>
+      <Item Value="model.AllAllTables.LastAnalyzed"/>
+      <Item Value="model.AllAllTables.Partitioned"/>
+      <Item Value="model.AllAllTables.IotType"/>
+      <Item Value="model.AllAllTables.ObjectIdType"/>
+      <Item Value="model.AllAllTables.TableTypeOwner"/>
+      <Item Value="model.AllAllTables.TableType"/>
+      <Item Value="model.AllAllTables.Temporary"/>
+      <Item Value="model.AllAllTables.Secondary"/>
+      <Item Value="model.AllAllTables.Nested"/>
+      <Item Value="model.AllAllTables.BufferPool"/>
+      <Item Value="model.AllAllTables.FlashCache"/>
+      <Item Value="model.AllAllTables.CellFlashCache"/>
+      <Item Value="model.AllAllTables.RowMovement"/>
+      <Item Value="model.AllAllTables.GlobalStats"/>
+      <Item Value="model.AllAllTables.UserStats"/>
+      <Item Value="model.AllAllTables.Duration"/>
+      <Item Value="model.AllAllTables.SkipCorrupt"/>
+      <Item Value="model.AllAllTables.Monitoring"/>
+      <Item Value="model.AllAllTables.ClusterOwner"/>
+      <Item Value="model.AllAllTables.Dependencies"/>
+      <Item Value="model.AllAllTables.Compression"/>
+      <Item Value="model.AllAllTables.CompressFor"/>
+      <Item Value="model.AllAllTables.Dropped"/>
+      <Item Value="model.AllAllTables.SegmentCreated"/>
+    </AttrArray>
+  </Key>
+</Entity>

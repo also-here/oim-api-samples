@@ -1,0 +1,12 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://pts-template-config.rightnowdemo.com/cgi-bin/pts_template_config.cfg/services/soap?wsdl=typed_v1.2#%7Burn%3Awsdl.ws.rightnow.com%2Fv1_2%7DRightNowSyncService"
+          uri="../com/rightnow/ws/wsdl/v1_2/RightNowSyncService.wsdl"/>
+  <system systemId="http://vik-14110-sql-b102h.dv.lan/cgi-bin/vik_14110_sql_b102h.cfg/services/soap?wsdl#%7Burn%3Awsdl.ws.rightnow.com%2Fv1_2%7DRightNowSyncService"
+          uri="../com/rightnow/ws/wsdl/v1_2/RightNowSyncService.wsdl"/>
+  <system systemId="http://vik-14110-sql-b110h.dv.lan/cgi-bin/vik_14110_sql_b110h.cfg/services/soap?wsdl#%7Burn%3Awsdl.ws.rightnow.com%2Fv1_2%7DRightNowSyncService"
+          uri="../com/rightnow/ws/wsdl/v1_2/RightNowSyncService.wsdl"/>
+  <system systemId="http://pts-template-config.rightnowdemo.com/cgi-bin/pts_template_config.cfg/services/soap?wsdl#%7Burn%3Awsdl.ws.rightnow.com%2Fv1_2%7DRightNowSyncService"
+          uri="../com/rightnow/ws/wsdl/v1_2/RightNowSyncService.wsdl"/>
+  <system systemId="https://pts-template-config.rightnowdemo.com/cgi-bin/pts_template_config.cfg/services/soap?wsdl#%7Burn%3Awsdl.ws.rightnow.com%2Fv1_2%7DRightNowSyncService"
+          uri="../com/rightnow/ws/wsdl/v1_2/RightNowSyncService.wsdl"/>
+</catalog>

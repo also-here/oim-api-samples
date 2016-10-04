@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventhandlers xmlns="http://www.oracle.com/schema/oim/platform/kernel"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.oracle.com/schema/oim/platform/kernel orchestration-handlers.xsd">
+	<action-handler class="oracle.iam.identity.usermgmt.impl.plugins.UIDPreProcessHandler"
+	entity-type="User"
+	operation="CREATE"
+	name="UIDPreProcessHandlerOne"
+	stage="preprocess"
+	order="FIRST"
+	sync="TRUE"/>
+</eventhandlers>

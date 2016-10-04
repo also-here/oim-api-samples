@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oimplugins>
+	<plugins pluginpoint="oracle.iam.identity.usermgmt.api.UserNamePolicy">
+		<plugin pluginclass="oracle.iam.identity.usermgmt.impl.plugins.UserIdGenerationDemoOne" version="1.0" name="UserIdGenerationDemoThree"/>
+	</plugins>
+</oimplugins>

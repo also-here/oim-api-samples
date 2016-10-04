@@ -1,0 +1,8 @@
+<scheduledTasks xmlns="http://xmlns.oracle.com/oim/scheduler">
+    <task>
+        <name>Extend_Expiry_Date</name>
+        <class>extendpasswordexpirydate.PasswordExpireDemo</class>
+        <description>Scheduler to extend the users account date</description>
+        <retry>5</retry>
+    </task>
+</scheduledTasks>

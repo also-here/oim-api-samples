@@ -1,0 +1,1353 @@
+<definitions
+     name="RightNow"
+     targetNamespace="urn:wsdl.ws.rightnow.com/v1_2"
+     xmlns="http://schemas.xmlsoap.org/wsdl/"
+     xmlns:rno_v1_2="urn:objects.ws.rightnow.com/v1_2"
+     xmlns:rna_v1_2="urn:metadata.ws.rightnow.com/v1_2"
+     xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+     xmlns:rnm_v1_2="urn:messages.ws.rightnow.com/v1_2"
+     xmlns:rnn_v1_2="urn:nullfields.ws.rightnow.com/v1_2"
+     xmlns:rnw_v1_2="urn:wsdl.ws.rightnow.com/v1_2"
+     xmlns:rnf_v1_2="urn:faults.ws.rightnow.com/v1_2"
+     xmlns:rng_v1_2="urn:generic.ws.rightnow.com/v1_2"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:rnb_v1_2="urn:base.ws.rightnow.com/v1_2"
+    >
+    <wsdl:documentation>
+        <version>1.2</version>
+        <wsdlRevision>1.2.14.8</wsdlRevision>
+    </wsdl:documentation>
+    <wsp:Policy xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+         wsu:Id="SyncPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:TransportBinding>
+                    <wsp:Policy>
+                        <wsp:ExactlyOne>
+                            <wsp:All>
+                                <sp:TransportToken>
+                                    <wsp:Policy>
+                                        <wsp:ExactlyOne>
+                                            <sp:HttpsToken/>
+                                        </wsp:ExactlyOne>
+                                    </wsp:Policy>
+                                </sp:TransportToken>
+                                <sp:AlgorithmSuite>
+                                    <wsp:Policy>
+                                        <sp:Basic256/>
+                                    </wsp:Policy>
+                                </sp:AlgorithmSuite>
+                                <sp:Layout>
+                                    <wsp:Policy>
+                                        <wsp:ExactlyOne>
+                                            <sp:Lax/>
+                                        </wsp:ExactlyOne>
+                                    </wsp:Policy>
+                                </sp:Layout>
+                            </wsp:All>
+                        </wsp:ExactlyOne>
+                    </wsp:Policy>
+                </sp:TransportBinding>
+                <wsp:ExactlyOne>
+                    <sp:SignedSupportingTokens>
+                        <wsp:Policy>
+                            <wsp:ExactlyOne>
+                                <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                                    <wsp:Policy>
+                                        <wsp:ExactlyOne>
+                                            <sp:WssUsernameToken10/>
+                                        </wsp:ExactlyOne>
+                                    </wsp:Policy>
+                                </sp:UsernameToken>
+                            </wsp:ExactlyOne>
+                        </wsp:Policy>
+                    </sp:SignedSupportingTokens>
+                    <sp:SupportingTokens>
+                        <wsp:Policy>
+                            <wsp:ExactlyOne>
+                                <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                                    <wsp:Policy>
+                                        <wsp:ExactlyOne>
+                                            <sp:WssUsernameToken10/>
+                                        </wsp:ExactlyOne>
+                                    </wsp:Policy>
+                                </sp:UsernameToken>
+                            </wsp:ExactlyOne>
+                        </wsp:Policy>
+                    </sp:SupportingTokens>
+                </wsp:ExactlyOne>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+         wsu:Id="FedAuthSyncPolicy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+         xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:t="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+         xmlns:wsaw="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:TransportBinding>
+                    <wsp:Policy>
+                        <sp:TransportToken>
+                            <wsp:Policy>
+                                <sp:HttpsToken/>
+                            </wsp:Policy>
+                        </sp:TransportToken>
+                        <sp:AlgorithmSuite>
+                            <wsp:Policy>
+                                <sp:Basic256/>
+                            </wsp:Policy>
+                        </sp:AlgorithmSuite>
+                        <sp:Layout>
+                            <wsp:Policy>
+                                <sp:Lax/>
+                            </wsp:Policy>
+                        </sp:Layout>
+                    </wsp:Policy>
+                </sp:TransportBinding>
+                <sp:SignedSupportingTokens xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+                    <wsp:Policy>
+                        <sp:IssuedToken sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/AlwaysToRecipient">
+                            <sp:RequestSecurityTokenTemplate>
+                                <t:TokenType>http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV2.0</t:TokenType>
+                                <t:KeyType>http://docs.oasis-open.org/ws-sx/ws-trust/200512/Bearer</t:KeyType>
+                                <t:CanonicalizationAlgorithm>http://www.w3.org/2001/10/xml-exc-c14n#</t:CanonicalizationAlgorithm>
+                                <t:SignWith>http://www.w3.org/2000/09/xmldsig#hmac-sha1</t:SignWith>
+                                <t:SignatureAlgorithm>http://www.w3.org/2000/09/xmldsig#rsa-sha1</t:SignatureAlgorithm>
+                            </sp:RequestSecurityTokenTemplate>
+                            <wsp:Policy>
+                                <sp:RequireInternalReference/>
+                            </wsp:Policy>
+                            <sp:Issuer>
+                                <wsaw:Address/>
+                                <wsaw:Metadata>
+                                    <wsx:Metadata>
+                                        <wsx:MetadataSection>
+                                            <wsx:MetadataReference>
+                                                <wsaw:Address/>
+                                            </wsx:MetadataReference>
+                                        </wsx:MetadataSection>
+                                    </wsx:Metadata>
+                                </wsaw:Metadata>
+                            </sp:Issuer>
+                        </sp:IssuedToken>
+                    </wsp:Policy>
+                </sp:SignedSupportingTokens>
+                <sp:Wss11>
+                    <wsp:Policy/>
+                </sp:Wss11>
+                <sp:Trust13>
+                    <wsp:Policy>
+                        <sp:MustSupportIssuedTokens/>
+                    </wsp:Policy>
+                </sp:Trust13>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:import namespace="urn:base.ws.rightnow.com/v1_2" schemaLocation="soap_xsd_base.xsd"/>
+            <xs:import namespace="urn:generic.ws.rightnow.com/v1_2" schemaLocation="soap_xsd_generic.xsd"/>
+            <xs:import namespace="urn:nullfields.ws.rightnow.com/v1_2" schemaLocation="soap_xsd_nullfields.xsd"/>
+            <xs:import namespace="urn:objects.ws.rightnow.com/v1_2" schemaLocation="soap_xsd_objects.xsd"/>
+            <xs:import namespace="urn:metadata.ws.rightnow.com/v1_2" schemaLocation="soap_xsd_metadata.xsd"/>
+            <xs:import namespace="urn:faults.ws.rightnow.com/v1_2" schemaLocation="soap_xsd_faults.xsd"/>
+            <xs:import namespace="urn:messages.ws.rightnow.com/v1_2" schemaLocation="soap_xsd_messagestyped.xsd"/>
+        </xs:schema>
+    </types>
+    <message name="CreateRequest">
+        <part name="parameters" element="rnm_v1_2:Create"/>
+    </message>
+    <message name="CreateResponse">
+        <part name="parameters" element="rnm_v1_2:CreateResponse"/>
+    </message>
+    <message name="ServerErrorFault">
+        <part name="fault" element="rnf_v1_2:ServerErrorFault"/>
+    </message>
+    <message name="RequestErrorFault">
+        <part name="fault" element="rnf_v1_2:RequestErrorFault"/>
+    </message>
+    <message name="UnexpectedErrorFault">
+        <part name="fault" element="rnf_v1_2:UnexpectedErrorFault"/>
+    </message>
+    <message name="GetRequest">
+        <part name="parameters" element="rnm_v1_2:Get"/>
+    </message>
+    <message name="GetResponse">
+        <part name="parameters" element="rnm_v1_2:GetResponse"/>
+    </message>
+    <message name="UpdateRequest">
+        <part name="parameters" element="rnm_v1_2:Update"/>
+    </message>
+    <message name="UpdateResponse">
+        <part name="parameters" element="rnm_v1_2:UpdateResponse"/>
+    </message>
+    <message name="DestroyRequest">
+        <part name="parameters" element="rnm_v1_2:Destroy"/>
+    </message>
+    <message name="DestroyResponse">
+        <part name="parameters" element="rnm_v1_2:DestroyResponse"/>
+    </message>
+    <message name="QueryObjectsRequest">
+        <part name="parameters" element="rnm_v1_2:QueryObjects"/>
+    </message>
+    <message name="QueryObjectsResponse">
+        <part name="parameters" element="rnm_v1_2:QueryObjectsResponse"/>
+    </message>
+    <message name="QueryCSVRequest">
+        <part name="parameters" element="rnm_v1_2:QueryCSV"/>
+    </message>
+    <message name="QueryCSVResponse">
+        <part name="parameters" element="rnm_v1_2:QueryCSVResponse"/>
+    </message>
+    <message name="RunAnalyticsReportRequest">
+        <part name="parameters" element="rnm_v1_2:RunAnalyticsReport"/>
+    </message>
+    <message name="RunAnalyticsReportResponse">
+        <part name="parameters" element="rnm_v1_2:RunAnalyticsReportResponse"/>
+    </message>
+    <message name="ExecuteMarketingFlowRequest">
+        <part name="parameters" element="rnm_v1_2:ExecuteMarketingFlow"/>
+    </message>
+    <message name="ExecuteMarketingFlowResponse">
+        <part name="parameters" element="rnm_v1_2:ExecuteMarketingFlowResponse"/>
+    </message>
+    <message name="GetFileDataRequest">
+        <part name="parameters" element="rnm_v1_2:GetFileData"/>
+    </message>
+    <message name="GetFileDataResponse">
+        <part name="parameters" element="rnm_v1_2:GetFileDataResponse"/>
+    </message>
+    <message name="ResetContactPasswordRequest">
+        <part name="parameters" element="rnm_v1_2:ResetContactPassword"/>
+    </message>
+    <message name="ResetContactPasswordResponse">
+        <part name="parameters" element="rnm_v1_2:ResetContactPasswordResponse"/>
+    </message>
+    <message name="SendMailingToContactRequest">
+        <part name="parameters" element="rnm_v1_2:SendMailingToContact"/>
+    </message>
+    <message name="SendMailingToContactResponse">
+        <part name="parameters" element="rnm_v1_2:SendMailingToContactResponse"/>
+    </message>
+    <message name="TransferSubObjectsRequest">
+        <part name="parameters" element="rnm_v1_2:TransferSubObjects"/>
+    </message>
+    <message name="TransferSubObjectsResponse">
+        <part name="parameters" element="rnm_v1_2:TransferSubObjectsResponse"/>
+    </message>
+    <message name="BatchRequest">
+        <part name="parameters" element="rnm_v1_2:Batch"/>
+    </message>
+    <message name="BatchResponse">
+        <part name="parameters" element="rnm_v1_2:BatchResponse"/>
+    </message>
+    <message name="GetMetaDataRequest">
+        <part name="parameters" element="rnm_v1_2:GetMetaData"/>
+    </message>
+    <message name="GetMetaDataResponse">
+        <part name="parameters" element="rnm_v1_2:GetMetaDataResponse"/>
+    </message>
+    <message name="GetMetaDataForClassRequest">
+        <part name="parameters" element="rnm_v1_2:GetMetaDataForClass"/>
+    </message>
+    <message name="GetMetaDataForClassResponse">
+        <part name="parameters" element="rnm_v1_2:GetMetaDataForClassResponse"/>
+    </message>
+    <message name="GetMetaDataLastChangeTimeRequest">
+        <part name="parameters" element="rnm_v1_2:GetMetaDataLastChangeTime"/>
+    </message>
+    <message name="GetMetaDataLastChangeTimeResponse">
+        <part name="parameters" element="rnm_v1_2:GetMetaDataLastChangeTimeResponse"/>
+    </message>
+    <message name="GetValuesForNamedIDRequest">
+        <part name="parameters" element="rnm_v1_2:GetValuesForNamedID"/>
+    </message>
+    <message name="GetValuesForNamedIDResponse">
+        <part name="parameters" element="rnm_v1_2:GetValuesForNamedIDResponse"/>
+    </message>
+    <message name="GetValuesForNamedIDHierarchyRequest">
+        <part name="parameters" element="rnm_v1_2:GetValuesForNamedIDHierarchy"/>
+    </message>
+    <message name="GetValuesForNamedIDHierarchyResponse">
+        <part name="parameters" element="rnm_v1_2:GetValuesForNamedIDHierarchyResponse"/>
+    </message>
+    <message name="ConvertGenericToObjectRequest">
+        <part name="parameters" element="rnm_v1_2:ConvertGenericToObject"/>
+    </message>
+    <message name="ConvertGenericToObjectResponse">
+        <part name="parameters" element="rnm_v1_2:ConvertGenericToObjectResponse"/>
+    </message>
+    <message name="ConvertObjectToGenericRequest">
+        <part name="parameters" element="rnm_v1_2:ConvertObjectToGeneric"/>
+    </message>
+    <message name="ConvertObjectToGenericResponse">
+        <part name="parameters" element="rnm_v1_2:ConvertObjectToGenericResponse"/>
+    </message>
+    <message name="ClientInfoHeader">
+        <part name="request_header" element="rnm_v1_2:ClientInfoHeader"/>
+    </message>
+    <message name="RNFault">
+        <part name="fault" type="rnf_v1_2:RNFault"/>
+    </message>
+    <portType name="RightNowSyncPort">
+        <operation name="Create">
+            <input message="rnw_v1_2:CreateRequest"/>
+            <output message="rnw_v1_2:CreateResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="Get">
+            <input message="rnw_v1_2:GetRequest"/>
+            <output message="rnw_v1_2:GetResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="Update">
+            <input message="rnw_v1_2:UpdateRequest"/>
+            <output message="rnw_v1_2:UpdateResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="Destroy">
+            <input message="rnw_v1_2:DestroyRequest"/>
+            <output message="rnw_v1_2:DestroyResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="QueryObjects">
+            <input message="rnw_v1_2:QueryObjectsRequest"/>
+            <output message="rnw_v1_2:QueryObjectsResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="QueryCSV">
+            <input message="rnw_v1_2:QueryCSVRequest"/>
+            <output message="rnw_v1_2:QueryCSVResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="RunAnalyticsReport">
+            <input message="rnw_v1_2:RunAnalyticsReportRequest"/>
+            <output message="rnw_v1_2:RunAnalyticsReportResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="ExecuteMarketingFlow">
+            <input message="rnw_v1_2:ExecuteMarketingFlowRequest"/>
+            <output message="rnw_v1_2:ExecuteMarketingFlowResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetFileData">
+            <input message="rnw_v1_2:GetFileDataRequest"/>
+            <output message="rnw_v1_2:GetFileDataResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="ResetContactPassword">
+            <input message="rnw_v1_2:ResetContactPasswordRequest"/>
+            <output message="rnw_v1_2:ResetContactPasswordResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="SendMailingToContact">
+            <input message="rnw_v1_2:SendMailingToContactRequest"/>
+            <output message="rnw_v1_2:SendMailingToContactResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="TransferSubObjects">
+            <input message="rnw_v1_2:TransferSubObjectsRequest"/>
+            <output message="rnw_v1_2:TransferSubObjectsResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="Batch">
+            <input message="rnw_v1_2:BatchRequest"/>
+            <output message="rnw_v1_2:BatchResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetMetaData">
+            <input message="rnw_v1_2:GetMetaDataRequest"/>
+            <output message="rnw_v1_2:GetMetaDataResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetMetaDataForClass">
+            <input message="rnw_v1_2:GetMetaDataForClassRequest"/>
+            <output message="rnw_v1_2:GetMetaDataForClassResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetMetaDataLastChangeTime">
+            <input message="rnw_v1_2:GetMetaDataLastChangeTimeRequest"/>
+            <output message="rnw_v1_2:GetMetaDataLastChangeTimeResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetValuesForNamedID">
+            <input message="rnw_v1_2:GetValuesForNamedIDRequest"/>
+            <output message="rnw_v1_2:GetValuesForNamedIDResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetValuesForNamedIDHierarchy">
+            <input message="rnw_v1_2:GetValuesForNamedIDHierarchyRequest"/>
+            <output message="rnw_v1_2:GetValuesForNamedIDHierarchyResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="ConvertGenericToObject">
+            <input message="rnw_v1_2:ConvertGenericToObjectRequest"/>
+            <output message="rnw_v1_2:ConvertGenericToObjectResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="ConvertObjectToGeneric">
+            <input message="rnw_v1_2:ConvertObjectToGenericRequest"/>
+            <output message="rnw_v1_2:ConvertObjectToGenericResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+    </portType>
+    <portType name="RightNowFedAuthSyncPort">
+        <operation name="Create">
+            <input message="rnw_v1_2:CreateRequest"/>
+            <output message="rnw_v1_2:CreateResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="Get">
+            <input message="rnw_v1_2:GetRequest"/>
+            <output message="rnw_v1_2:GetResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="Update">
+            <input message="rnw_v1_2:UpdateRequest"/>
+            <output message="rnw_v1_2:UpdateResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="Destroy">
+            <input message="rnw_v1_2:DestroyRequest"/>
+            <output message="rnw_v1_2:DestroyResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="QueryObjects">
+            <input message="rnw_v1_2:QueryObjectsRequest"/>
+            <output message="rnw_v1_2:QueryObjectsResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="QueryCSV">
+            <input message="rnw_v1_2:QueryCSVRequest"/>
+            <output message="rnw_v1_2:QueryCSVResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="RunAnalyticsReport">
+            <input message="rnw_v1_2:RunAnalyticsReportRequest"/>
+            <output message="rnw_v1_2:RunAnalyticsReportResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="ExecuteMarketingFlow">
+            <input message="rnw_v1_2:ExecuteMarketingFlowRequest"/>
+            <output message="rnw_v1_2:ExecuteMarketingFlowResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetFileData">
+            <input message="rnw_v1_2:GetFileDataRequest"/>
+            <output message="rnw_v1_2:GetFileDataResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="ResetContactPassword">
+            <input message="rnw_v1_2:ResetContactPasswordRequest"/>
+            <output message="rnw_v1_2:ResetContactPasswordResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="SendMailingToContact">
+            <input message="rnw_v1_2:SendMailingToContactRequest"/>
+            <output message="rnw_v1_2:SendMailingToContactResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="TransferSubObjects">
+            <input message="rnw_v1_2:TransferSubObjectsRequest"/>
+            <output message="rnw_v1_2:TransferSubObjectsResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="Batch">
+            <input message="rnw_v1_2:BatchRequest"/>
+            <output message="rnw_v1_2:BatchResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetMetaData">
+            <input message="rnw_v1_2:GetMetaDataRequest"/>
+            <output message="rnw_v1_2:GetMetaDataResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetMetaDataForClass">
+            <input message="rnw_v1_2:GetMetaDataForClassRequest"/>
+            <output message="rnw_v1_2:GetMetaDataForClassResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetMetaDataLastChangeTime">
+            <input message="rnw_v1_2:GetMetaDataLastChangeTimeRequest"/>
+            <output message="rnw_v1_2:GetMetaDataLastChangeTimeResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetValuesForNamedID">
+            <input message="rnw_v1_2:GetValuesForNamedIDRequest"/>
+            <output message="rnw_v1_2:GetValuesForNamedIDResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="GetValuesForNamedIDHierarchy">
+            <input message="rnw_v1_2:GetValuesForNamedIDHierarchyRequest"/>
+            <output message="rnw_v1_2:GetValuesForNamedIDHierarchyResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="ConvertGenericToObject">
+            <input message="rnw_v1_2:ConvertGenericToObjectRequest"/>
+            <output message="rnw_v1_2:ConvertGenericToObjectResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+        <operation name="ConvertObjectToGeneric">
+            <input message="rnw_v1_2:ConvertObjectToGenericRequest"/>
+            <output message="rnw_v1_2:ConvertObjectToGenericResponse"/>
+            <fault name="ServerErrorFault" message="rnw_v1_2:ServerErrorFault"/>
+            <fault name="RequestErrorFault" message="rnw_v1_2:RequestErrorFault"/>
+            <fault name="UnexpectedErrorFault" message="rnw_v1_2:UnexpectedErrorFault"/>
+        </operation>
+    </portType>
+    <binding name="RightNowSyncBinding" type="rnw_v1_2:RightNowSyncPort">
+        <wsp:PolicyReference URI="#SyncPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="Create">
+            <soap:operation style="document" soapAction="Create"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="Get">
+            <soap:operation style="document" soapAction="Get"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="Update">
+            <soap:operation style="document" soapAction="Update"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="Destroy">
+            <soap:operation style="document" soapAction="Destroy"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="QueryCSV">
+            <soap:operation style="document" soapAction="QueryCSV"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="QueryObjects">
+            <soap:operation style="document" soapAction="QueryObjects"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="RunAnalyticsReport">
+            <soap:operation style="document" soapAction="RunAnalyticsReport"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ExecuteMarketingFlow">
+            <soap:operation style="document" soapAction="ExecuteMarketingFlow"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetFileData">
+            <soap:operation style="document" soapAction="GetFileData"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ResetContactPassword">
+            <soap:operation style="document" soapAction="ResetContactPassword"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="SendMailingToContact">
+            <soap:operation style="document" soapAction="SendMailingToContact"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="TransferSubObjects">
+            <soap:operation style="document" soapAction="TransferSubObjects"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="Batch">
+            <soap:operation style="document" soapAction="Batch"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ConvertGenericToObject">
+            <soap:operation style="document" soapAction="ConvertGenericToObject"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ConvertObjectToGeneric">
+            <soap:operation style="document" soapAction="ConvertObjectToGeneric"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetMetaData">
+            <soap:operation style="document" soapAction="GetMetaData"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetMetaDataForClass">
+            <soap:operation style="document" soapAction="GetMetaDataForClass"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetMetaDataLastChangeTime">
+            <soap:operation style="document" soapAction="GetMetaDataLastChangeTime"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetValuesForNamedID">
+            <soap:operation style="document" soapAction="GetValuesForNamedID"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetValuesForNamedIDHierarchy">
+            <soap:operation style="document" soapAction="GetValuesForNamedIDHierarchy"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+    </binding>
+    <binding name="RightNowFedAuthSyncBinding" type="rnw_v1_2:RightNowFedAuthSyncPort">
+        <wsp:PolicyReference URI="#FedAuthSyncPolicy" xmlns:wsp="http://www.w3.org/ns/ws-policy"/>
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="Create">
+            <soap:operation style="document" soapAction="Create"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="Get">
+            <soap:operation style="document" soapAction="Get"/>
+            <input>
+                <soap:body use="literal"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="Update">
+            <soap:operation style="document" soapAction="Update"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="Destroy">
+            <soap:operation style="document" soapAction="Destroy"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="QueryCSV">
+            <soap:operation style="document" soapAction="QueryCSV"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="QueryObjects">
+            <soap:operation style="document" soapAction="QueryObjects"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="RunAnalyticsReport">
+            <soap:operation style="document" soapAction="RunAnalyticsReport"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ExecuteMarketingFlow">
+            <soap:operation style="document" soapAction="ExecuteMarketingFlow"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetFileData">
+            <soap:operation style="document" soapAction="GetFileData"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ResetContactPassword">
+            <soap:operation style="document" soapAction="ResetContactPassword"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="SendMailingToContact">
+            <soap:operation style="document" soapAction="SendMailingToContact"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="TransferSubObjects">
+            <soap:operation style="document" soapAction="TransferSubObjects"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="Batch">
+            <soap:operation style="document" soapAction="Batch"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ConvertGenericToObject">
+            <soap:operation style="document" soapAction="ConvertGenericToObject"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="ConvertObjectToGeneric">
+            <soap:operation style="document" soapAction="ConvertObjectToGeneric"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetMetaData">
+            <soap:operation style="document" soapAction="GetMetaData"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetMetaDataForClass">
+            <soap:operation style="document" soapAction="GetMetaDataForClass"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetMetaDataLastChangeTime">
+            <soap:operation style="document" soapAction="GetMetaDataLastChangeTime"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetValuesForNamedID">
+            <soap:operation style="document" soapAction="GetValuesForNamedID"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="GetValuesForNamedIDHierarchy">
+            <soap:operation style="document" soapAction="GetValuesForNamedIDHierarchy"/>
+            <input>
+                <soap:body use="literal" parts="parameters"/>
+                <soap:header message="rnw_v1_2:ClientInfoHeader" part="request_header" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ServerErrorFault">
+                <soap:fault name="ServerErrorFault" use="literal"/>
+            </fault>
+            <fault name="RequestErrorFault">
+                <soap:fault name="RequestErrorFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+    </binding>
+    <service name="RightNowSyncService">
+        <port name="RightNowFedAuthSyncPort" binding="rnw_v1_2:RightNowFedAuthSyncBinding">
+            <soap:address location="https://pts-jantt1-training-191.rightnowdemo.com/cgi-bin/pts-jantt1-training-191.cfg/services/soap"/>
+        </port>
+        <port name="RightNowSyncPort" binding="rnw_v1_2:RightNowSyncBinding">
+            <soap:address location="https://pts-jantt1-training-191.rightnowdemo.com/cgi-bin/pts-jantt1-training-191.cfg/services/soap"/>
+        </port>
+    </service>
+</definitions>

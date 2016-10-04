@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventhandlers xmlns="http://www.oracle.com/schema/oim/platform/kernel/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.oracle.com/schema/oim/platform/kernelorchestration-handlers.xsd">
+	<action-handler class="com.of4all.eventhandler.customeventhandler.OF4ALLCustomEventHandler"
+	entity-type="User"
+	operation="Create"
+	name="GenerateEmailIdEH"
+	stage="postprocess"
+	order="1001"
+	sync="FALSE"/>
+</eventhandlers>

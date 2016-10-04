@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+    <eventhandlers xmlns="http://www.oracle.com/schema/oim/platform/kernel"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.oracle.com/schema/oim/platform/kernel orchestration-handlers.xsd">
+ 
+  <!-- Custom preprocess event handlers -->
+  <action-handler
+    class="postprocesshandler.PostProcessEmailGenEH"
+    entity-type="User" 
+    operation="CREATE" 
+    name="PostProcessEmailGenEH"
+    stage="postprocess"
+    order="1001" 
+    sync="FALSE"/>
+</eventhandlers>

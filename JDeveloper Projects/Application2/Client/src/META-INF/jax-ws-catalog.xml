@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://pts-jantt1-training-191.rightnowdemo.com/cgi-bin/pts-jantt1-training-191.cfg/services/soap?wsdl"
+          uri="../com/rightnow/ws/wsdl/v1_2/RightNowSyncService.wsdl"/>
+</catalog>

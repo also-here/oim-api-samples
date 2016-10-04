@@ -1,0 +1,1028 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebServiceProxy xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webserviceproxy">
+   <list n="CHILD_NODES">
+      <url path="RightNowSyncService.xml"/>
+      <url path="RightNowSyncService.wsdl"/>
+      <url path="soap_xsd_metadata.xsd"/>
+      <url path="soap_xsd_faults.xsd"/>
+      <url path="soap_xsd_messagestyped.xsd"/>
+      <url path="soap_xsd_objects.xsd"/>
+      <url path="soap_xsd_base.xsd"/>
+      <url path="soap_xsd_nullfields.xsd"/>
+      <url path="soap_xsd_generic.xsd"/>
+      <url path="../../nullfields/v1_2/ServiceDispositionNullFields.java"/>
+      <url path="../../objects/v1_2/LabelRequiredList.java"/>
+      <url path="../../base/v1_2/ObjectFactory.java"/>
+      <url path="../../objects/v1_2/MonetaryValue.java"/>
+      <url path="../../nullfields/v1_2/AssignedSLAInstanceNullFields.java"/>
+      <url path="../../nullfields/v1_2/ServiceCategoryNullFields.java"/>
+      <url path="../../messages/v1_2/GetMetaDataResponseMsg.java"/>
+      <url path="../../base/v1_2/ChainDestinationID.java"/>
+      <url path="../../objects/v1_2/OpportunityContactList.java"/>
+      <url path="../../objects/v1_2/EmailList.java"/>
+      <url path="../../messages/v1_2/CSVTableSet.java"/>
+      <url path="../../metadata/v1_2/MetaDataUsageEnum.java"/>
+      <url path="../../metadata/v1_2/package-info.java"/>
+      <url path="../../objects/v1_2/AnalyticsReportSearchFilter.java"/>
+      <url path="../../metadata/v1_2/MetaDataKeyTypeEnum.java"/>
+      <url path="../../messages/v1_2/GetMetaDataForClassMsg.java"/>
+      <url path="../../metadata/v1_2/ObjectFactory.java"/>
+      <url path="../../nullfields/v1_2/MailboxIncomingEmailSettingsNullFields.java"/>
+      <url path="../../messages/v1_2/GetMsg.java"/>
+      <url path="../../nullfields/v1_2/StandardContentContentValueNullFields.java"/>
+      <url path="../../nullfields/v1_2/ContactServiceSettingsNullFields.java"/>
+      <url path="../../nullfields/v1_2/BannerNullFields.java"/>
+      <url path="../../messages/v1_2/BatchMsg.java"/>
+      <url path="../../generic/v1_2/GenericObject.java"/>
+      <url path="../../messages/v1_2/UpdateProcessingOptions.java"/>
+      <url path="../../objects/v1_2/AccountOptions.java"/>
+      <url path="../../nullfields/v1_2/MonetaryValueNullFields.java"/>
+      <url path="../../objects/v1_2/AssetSLAInstanceList.java"/>
+      <url path="../../objects/v1_2/Label.java"/>
+      <url path="../../base/v1_2/RNObject.java"/>
+      <url path="../../messages/v1_2/GetValuesForNamedIDResponseMsg.java"/>
+      <url path="../../objects/v1_2/TaskMarketingSettings.java"/>
+      <url path="../../objects/v1_2/Country.java"/>
+      <url path="../../objects/v1_2/SalesProductScheduleList.java"/>
+      <url path="../../base/v1_2/ID.java"/>
+      <url path="../../objects/v1_2/ContactServiceSettings.java"/>
+      <url path="../../objects/v1_2/Quote.java"/>
+      <url path="../../nullfields/v1_2/ContactMarketingSettingsNullFields.java"/>
+      <url path="../../messages/v1_2/QueryMsg.java"/>
+      <url path="../../objects/v1_2/Note.java"/>
+      <url path="../../messages/v1_2/ResetContactPasswordResponseMsg.java"/>
+      <url path="../../nullfields/v1_2/TaskServiceSettingsNullFields.java"/>
+      <url path="RightNowFedAuthSyncPortClient.java"/>
+      <url path="../../objects/v1_2/ServiceCategoryList.java"/>
+      <url path="../../metadata/v1_2/MetaDataClass.java"/>
+      <url path="../../objects/v1_2/MailboxOutgoingEmailSettings.java"/>
+      <url path="../../objects/v1_2/SharedFileAttachmentIncident.java"/>
+      <url path="../../nullfields/v1_2/AccountNullFields.java"/>
+      <url path="../../nullfields/v1_2/HolidayNullFields.java"/>
+      <url path="../../messages/v1_2/CreateResponseMsg.java"/>
+      <url path="../../objects/v1_2/ThreadList.java"/>
+      <url path="../../objects/v1_2/AssetSLAInstance.java"/>
+      <url path="../../messages/v1_2/QueryResultData.java"/>
+      <url path="../../objects/v1_2/ServiceProductList.java"/>
+      <url path="../../messages/v1_2/DestroyProcessingOptions.java"/>
+      <url path="../../messages/v1_2/CreateProcessingOptions.java"/>
+      <url path="../../nullfields/v1_2/CountryNullFields.java"/>
+      <url path="../../messages/v1_2/ResetContactPasswordMsg.java"/>
+      <url path="../../metadata/v1_2/MetaDataAttribute.java"/>
+      <url path="../../nullfields/v1_2/GroupAccountNullFields.java"/>
+      <url path="../../nullfields/v1_2/AccountSalesSettingsNullFields.java"/>
+      <url path="../../objects/v1_2/ContactSalesSettings.java"/>
+      <url path="../../nullfields/v1_2/IncidentNullFields.java"/>
+      <url path="../../messages/v1_2/DestroyResponseMsg.java"/>
+      <url path="../../objects/v1_2/TaskSalesSettings.java"/>
+      <url path="../../messages/v1_2/GetResponseMsg.java"/>
+      <url path="../../objects/v1_2/InheritOptions.java"/>
+      <url path="../../objects/v1_2/AssignedSLAInstance.java"/>
+      <url path="../../objects/v1_2/MessageBase.java"/>
+      <url path="../../nullfields/v1_2/AnswerNotificationNullFields.java"/>
+      <url path="../../nullfields/v1_2/MailboxOutgoingEmailSettingsNullFields.java"/>
+      <url path="../../objects/v1_2/IncidentContactList.java"/>
+      <url path="../../nullfields/v1_2/ChannelUsernameNullFields.java"/>
+      <url path="../../nullfields/v1_2/package-info.java"/>
+      <url path="RequestErrorFault.java"/>
+      <url path="../../messages/v1_2/RunAnalyticsReportResponseMsg.java"/>
+      <url path="../../base/v1_2/ChainSourceID.java"/>
+      <url path="../../objects/v1_2/InterfaceValue.java"/>
+      <url path="../../objects/v1_2/Opportunity.java"/>
+      <url path="../../messages/v1_2/GetValuesForNamedIDHierarchyMsg.java"/>
+      <url path="../../metadata/v1_2/MetaDataAttributeList.java"/>
+      <url path="../../nullfields/v1_2/QuoteLineItemNullFields.java"/>
+      <url path="../../objects/v1_2/ServiceCategory.java"/>
+      <url path="../../objects/v1_2/QuoteList.java"/>
+      <url path="../../messages/v1_2/SendMailingToContactResponseMsg.java"/>
+      <url path="../../nullfields/v1_2/PurchasedProductNullFields.java"/>
+      <url path="../../objects/v1_2/PhoneList.java"/>
+      <url path="../../nullfields/v1_2/PersonNameNullFields.java"/>
+      <url path="../../objects/v1_2/Banner.java"/>
+      <url path="../../objects/v1_2/PurchasedProduct.java"/>
+      <url path="../../objects/v1_2/ObjectFactory.java"/>
+      <url path="../../messages/v1_2/BatchResponseMsg.java"/>
+      <url path="../../objects/v1_2/FileAttachmentAnswer.java"/>
+      <url path="../../objects/v1_2/QuoteLineItemList.java"/>
+      <url path="../../nullfields/v1_2/OrganizationServiceSettingsNullFields.java"/>
+      <url path="../../objects/v1_2/AnswerNotificationList.java"/>
+      <url path="../../objects/v1_2/Phone.java"/>
+      <url path="../../nullfields/v1_2/ObjectFactory.java"/>
+      <url path="../../metadata/v1_2/MetaDataRelationship.java"/>
+      <url path="../../messages/v1_2/UpdateResponseMsg.java"/>
+      <url path="../../objects/v1_2/OpportunityContact.java"/>
+      <url path="../../objects/v1_2/FileAttachmentIncidentList.java"/>
+      <url path="../../faults/v1_2/package-info.java"/>
+      <url path="ServerErrorFault.java"/>
+      <url path="../../objects/v1_2/SalesProduct.java"/>
+      <url path="../../objects/v1_2/Email.java"/>
+      <url path="../../objects/v1_2/TimeBilledList.java"/>
+      <url path="../../objects/v1_2/StatusWithType.java"/>
+      <url path="../../nullfields/v1_2/NoteNullFields.java"/>
+      <url path="../../messages/v1_2/GetFileDataResponseMsg.java"/>
+      <url path="../../nullfields/v1_2/StandardContentNullFields.java"/>
+      <url path="../../objects/v1_2/Province.java"/>
+      <url path="../../generic/v1_2/ObjectFactory.java"/>
+      <url path="../../objects/v1_2/Mailbox.java"/>
+      <url path="../../objects/v1_2/AssetStatus.java"/>
+      <url path="../../objects/v1_2/LabelList.java"/>
+      <url path="../../objects/v1_2/Task.java"/>
+      <url path="../../messages/v1_2/ObjectFactory.java"/>
+      <url path="../../objects/v1_2/OpportunityContactDelta.java"/>
+      <url path="../../objects/v1_2/ChannelTypeOptions.java"/>
+      <url path="../../nullfields/v1_2/ProductNotificationNullFields.java"/>
+      <url path="../../metadata/v1_2/MetaDataNavigabilityEnum.java"/>
+      <url path="../../faults/v1_2/ServerErrorFaultType.java"/>
+      <url path="../../objects/v1_2/AnalyticsReport.java"/>
+      <url path="../../objects/v1_2/Organization.java"/>
+      <url path="../../nullfields/v1_2/SalesProductScheduleNullFields.java"/>
+      <url path="../../objects/v1_2/ContactOpenIDAccount.java"/>
+      <url path="../../objects/v1_2/Incident.java"/>
+      <url path="../../messages/v1_2/GetValuesForNamedIDMsg.java"/>
+      <url path="../../messages/v1_2/DestroyMsg.java"/>
+      <url path="../../objects/v1_2/SalesProductSchedule.java"/>
+      <url path="../../objects/v1_2/AnswerNotification.java"/>
+      <url path="RightNowFedAuthSyncPort.java"/>
+      <url path="../../messages/v1_2/QueryCSVResponseMsg.java"/>
+      <url path="../../base/v1_2/NamedIDDelta.java"/>
+      <url path="../../objects/v1_2/StandardContent.java"/>
+      <url path="../../objects/v1_2/ServiceDispositionList.java"/>
+      <url path="../../messages/v1_2/ExecuteMarketingFlowMsg.java"/>
+      <url path="../../messages/v1_2/TransferSubObjectsMsg.java"/>
+      <url path="../../nullfields/v1_2/AddressNullFields.java"/>
+      <url path="../../messages/v1_2/GetMetaDataMsg.java"/>
+      <url path="../../nullfields/v1_2/QuoteNullFields.java"/>
+      <url path="../../objects/v1_2/QuoteLineItem.java"/>
+      <url path="../../generic/v1_2/DataTypeEnum.java"/>
+      <url path="../../objects/v1_2/ChannelUsernameList.java"/>
+      <url path="../../nullfields/v1_2/OrganizationSalesSettingsNullFields.java"/>
+      <url path="../../messages/v1_2/GetFileDataMsg.java"/>
+      <url path="../../faults/v1_2/UnexpectedErrorFaultType.java"/>
+      <url path="../../objects/v1_2/StandardContentAttributes.java"/>
+      <url path="../../objects/v1_2/ServiceDispositionDelta.java"/>
+      <url path="../../metadata/v1_2/MetaDataCardinalityEnum.java"/>
+      <url path="../../nullfields/v1_2/AssetNullFields.java"/>
+      <url path="../../nullfields/v1_2/SalesTerritoryNullFields.java"/>
+      <url path="../../objects/v1_2/StandardContentContentValueList.java"/>
+      <url path="../../messages/v1_2/CreateMsg.java"/>
+      <url path="../../objects/v1_2/Address.java"/>
+      <url path="../../objects/v1_2/TypedAddress.java"/>
+      <url path="../../objects/v1_2/Thread.java"/>
+      <url path="../../objects/v1_2/ChannelUsername.java"/>
+      <url path="../../objects/v1_2/Variable.java"/>
+      <url path="../../objects/v1_2/IncidentContact.java"/>
+      <url path="../../base/v1_2/NamedIDHierarchy.java"/>
+      <url path="../../messages/v1_2/ConvertObjectMsg.java"/>
+      <url path="../../objects/v1_2/Answer.java"/>
+      <url path="../../objects/v1_2/OrganizationServiceSettings.java"/>
+      <url path="../../objects/v1_2/InterfaceValueList.java"/>
+      <url path="../../objects/v1_2/SalesProductOptions.java"/>
+      <url path="../../objects/v1_2/SiteInterface.java"/>
+      <url path="../../objects/v1_2/ServiceProduct.java"/>
+      <url path="../../nullfields/v1_2/OpportunityContactNullFields.java"/>
+      <url path="../../messages/v1_2/GetProcessingOptions.java"/>
+      <url path="../../nullfields/v1_2/ContactNullFields.java"/>
+      <url path="../../messages/v1_2/PagingResponse.java"/>
+      <url path="../../messages/v1_2/CSVTable.java"/>
+      <url path="../../messages/v1_2/package-info.java"/>
+      <url path="RightNowSyncPort.java"/>
+      <url path="../../nullfields/v1_2/TaskNullFields.java"/>
+      <url path="RightNowSyncPortClient.java"/>
+      <url path="../../base/v1_2/NamedIDWithParent.java"/>
+      <url path="../../objects/v1_2/SLAInstance.java"/>
+      <url path="../../objects/v1_2/package-info.java"/>
+      <url path="../../generic/v1_2/package-info.java"/>
+      <url path="../../base/v1_2/NamedIDHierarchyList.java"/>
+      <url path="../../nullfields/v1_2/OrganizationNullFields.java"/>
+      <url path="../../base/v1_2/package-info.java"/>
+      <url path="../../objects/v1_2/OrganizationSalesSettings.java"/>
+      <url path="../../objects/v1_2/SLAInstanceList.java"/>
+      <url path="../../messages/v1_2/BatchRequestItem.java"/>
+      <url path="../../objects/v1_2/AccountSalesSettings.java"/>
+      <url path="UnexpectedErrorFault.java"/>
+      <url path="../../messages/v1_2/CSVTables.java"/>
+      <url path="../../objects/v1_2/AnalyticsReportFilterAttributes.java"/>
+      <url path="../../objects/v1_2/Asset.java"/>
+      <url path="../../objects/v1_2/SalesTerritory.java"/>
+      <url path="../../objects/v1_2/ContactMarketingSettings.java"/>
+      <url path="../../nullfields/v1_2/StageWithStrategyNullFields.java"/>
+      <url path="../../objects/v1_2/TimeBilled.java"/>
+      <url path="../../objects/v1_2/ProvinceList.java"/>
+      <url path="../../objects/v1_2/AnswerLinkList.java"/>
+      <url path="../../objects/v1_2/FileAttachmentAnswerList.java"/>
+      <url path="../../messages/v1_2/TransferSubObjectsResponseMsg.java"/>
+      <url path="../../objects/v1_2/SharedFileAttachmentShared.java"/>
+      <url path="../../faults/v1_2/RequestErrorFaultType.java"/>
+      <url path="../../objects/v1_2/AnswerLink.java"/>
+      <url path="../../messages/v1_2/ExecuteMarketingFlowResponseMsg.java"/>
+      <url path="../../messages/v1_2/CSVRow.java"/>
+      <url path="../../objects/v1_2/FileAttachmentCommon.java"/>
+      <url path="../../objects/v1_2/StandardContentContentValue.java"/>
+      <url path="../../messages/v1_2/QueryObjectsMsg.java"/>
+      <url path="../../objects/v1_2/LabelRequired.java"/>
+      <url path="../../objects/v1_2/GroupAccount.java"/>
+      <url path="../../objects/v1_2/Configuration.java"/>
+      <url path="../../nullfields/v1_2/LabelNullFields.java"/>
+      <url path="../../messages/v1_2/GetMetaDataLastChangeTimeResponseMsg.java"/>
+      <url path="../../objects/v1_2/Holiday.java"/>
+      <url path="../../faults/v1_2/ExceptionCode.java"/>
+      <url path="../../nullfields/v1_2/OpportunityNullFields.java"/>
+      <url path="../../messages/v1_2/ConvertObjectResponseMsg.java"/>
+      <url path="RightNowSyncService.java"/>
+      <url path="../../generic/v1_2/DataValue.java"/>
+      <url path="../../objects/v1_2/SharedFileAttachmentCommon.java"/>
+      <url path="../../generic/v1_2/RNObjectType.java"/>
+      <url path="../../objects/v1_2/AccessLevelType.java"/>
+      <url path="../../nullfields/v1_2/SalesProductNullFields.java"/>
+      <url path="../../objects/v1_2/PersonFullName.java"/>
+      <url path="../../objects/v1_2/ServiceCategoryDelta.java"/>
+      <url path="../../nullfields/v1_2/TaskSalesSettingsNullFields.java"/>
+      <url path="../../nullfields/v1_2/TimeBilledNullFields.java"/>
+      <url path="../../objects/v1_2/TaskServiceSettings.java"/>
+      <url path="../../faults/v1_2/ObjectFactory.java"/>
+      <url path="../../objects/v1_2/AnalyticsReportFilter.java"/>
+      <url path="../../objects/v1_2/AnalyticsReportColumn.java"/>
+      <url path="../../objects/v1_2/FileAttachmentShared.java"/>
+      <url path="../../base/v1_2/NamedIDDeltaList.java"/>
+      <url path="../../base/v1_2/NamedIDList.java"/>
+      <url path="../../nullfields/v1_2/ServiceProductNullFields.java"/>
+      <url path="../../objects/v1_2/Contact.java"/>
+      <url path="../../objects/v1_2/FileAttachmentSharedList.java"/>
+      <url path="../../base/v1_2/NamedID.java"/>
+      <url path="../../nullfields/v1_2/ContactSalesSettingsNullFields.java"/>
+      <url path="../../nullfields/v1_2/ThreadNullFields.java"/>
+      <url path="../../messages/v1_2/UpdateMsg.java"/>
+      <url path="../../nullfields/v1_2/VariableNullFields.java"/>
+      <url path="../../nullfields/v1_2/AnswerNullFields.java"/>
+      <url path="../../objects/v1_2/MarketingMailbox.java"/>
+      <url path="../../objects/v1_2/ChannelType.java"/>
+      <url path="../../objects/v1_2/ProductNotificationList.java"/>
+      <url path="../../objects/v1_2/MailboxIncomingEmailSettings.java"/>
+      <url path="../../objects/v1_2/ServiceProductDelta.java"/>
+      <url path="../../messages/v1_2/SendMailingToContactMsg.java"/>
+      <url path="../../objects/v1_2/FileAttachmentIncident.java"/>
+      <url path="../../objects/v1_2/FileAttachmentList.java"/>
+      <url path="../../objects/v1_2/NoteList.java"/>
+      <url path="../../objects/v1_2/ServiceMailbox.java"/>
+      <url path="../../messages/v1_2/GetMetaDataForClassResponseMsg.java"/>
+      <url path="../../messages/v1_2/ClientInfoHeader.java"/>
+      <url path="../../objects/v1_2/AccountServiceSettings.java"/>
+      <url path="../../objects/v1_2/FileAttachment.java"/>
+      <url path="../../objects/v1_2/ServiceDisposition.java"/>
+      <url path="../../objects/v1_2/ContactOpenIDAccountList.java"/>
+      <url path="../../messages/v1_2/RNObjectsResult.java"/>
+      <url path="../../objects/v1_2/CRMModules.java"/>
+      <url path="../../objects/v1_2/CategoryNotification.java"/>
+      <url path="../../base/v1_2/ActionEnum.java"/>
+      <url path="../../objects/v1_2/IncidentContactDelta.java"/>
+      <url path="../../nullfields/v1_2/AnswerLinkNullFields.java"/>
+      <url path="../../objects/v1_2/Account.java"/>
+      <url path="../../messages/v1_2/RunAnalyticsReportMsg.java"/>
+      <url path="../../objects/v1_2/CategoryNotificationList.java"/>
+      <url path="../../objects/v1_2/SharedFileAttachmentAnswer.java"/>
+      <url path="../../nullfields/v1_2/MailboxNullFields.java"/>
+      <url path="../../base/v1_2/NamedReadOnlyID.java"/>
+      <url path="../../objects/v1_2/PersonName.java"/>
+      <url path="../../messages/v1_2/GetValuesForNamedIDHierarchyResponseMsg.java"/>
+      <url path="../../objects/v1_2/TypedAddressList.java"/>
+      <url path="../../messages/v1_2/GetMetaDataLastChangeTimeMsg.java"/>
+      <url path="../../nullfields/v1_2/CategoryNotificationNullFields.java"/>
+      <url path="../../messages/v1_2/BatchResponseItem.java"/>
+      <url path="../../objects/v1_2/FileAttachmentCommonList.java"/>
+      <url path="../../faults/v1_2/RNFault.java"/>
+      <url path="../../objects/v1_2/StageWithStrategy.java"/>
+      <url path="../../objects/v1_2/ProductNotification.java"/>
+      <url path="../../objects/v1_2/AssetStatuses.java"/>
+      <url path="../../nullfields/v1_2/TaskMarketingSettingsNullFields.java"/>
+      <url path="../../generic/v1_2/GenericField.java"/>
+      <url path="../../messages/v1_2/QueryObjectsResponseMsg.java"/>
+      <url path="../../objects/v1_2/StandardContentUsage.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MTOM"/>
+      <list n="BINDING_FILES">
+         <url path="../../../../../../../../../../Service Cloud Partner Training/Technical Training/Supporting Materials/PTSApp.zip" jar-entry="PTSApp/bindings.xml"/>
+      </list>
+      <list n="LOCAL_FILES">
+         <url path="RightNowSyncService-binding/bindings.xml"/>
+      </list>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy"/>
+      <url n="ORACLE_WEBSERVICES_XML" path="RightNowSyncService.xml"/>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            <value n="WSDL2JAVA_UNWRAP_PARAMETERS" v="false"/>
+         </hash>
+      </hash>
+      <value n="PROXY_ASYNC_METHODS" v="FOR_ENABLED"/>
+      <list n="PROXY_CLIENTS">
+         <url path="RightNowFedAuthSyncPortClient.java"/>
+         <url path="RightNowSyncPortClient.java"/>
+      </list>
+      <value n="PROXY_MAPPING_URL"/>
+      <url n="PROXY_ORIGINAL_WSDL_URL" protocol="http" host="pts-jantt1-training-191.rightnowdemo.com" path="/cgi-bin/pts-jantt1-training-191.cfg/services/soap" query="wsdl"/>
+      <hash n="PROXY_PORTS">
+         <hash n="RightNowFedAuthSyncPort">
+            <value n="ACCESSES_DOC_WRAPPPED" v="false"/>
+            <value n="ACCESSES_RPC_ENCODED" v="false"/>
+            <value n="CLASS_NAME" v="com.rightnow.ws.wsdl.v1_2.RightNowFedAuthSyncPort"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyPort"/>
+            <value n="NAME" v="RightNowFedAuthSyncPort"/>
+            <hash n="OPERATIONS">
+               <hash n="batch">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="convertGenericToObject">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="convertObjectToGeneric">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="create">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="destroy">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="executeMarketingFlow">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="get">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getFileData">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getMetaData">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getMetaDataForClass">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getMetaDataLastChangeTime">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getValuesForNamedID">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getValuesForNamedIDHierarchy">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="queryCSV">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="queryObjects">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="resetContactPassword">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="runAnalyticsReport">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="sendMailingToContact">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="transferSubObjects">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="update">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </hash>
+            <hash n="PROPERTY_GROUPS">
+               <hash n="WS_CLIENT_POLICY">
+                  <value n="addressing"/>
+                  <list n="management"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.policy.PolicyClientModel"/>
+                  <value n="mtom"/>
+                  <hash n="POLICY_OVERRIDE_PROPERTIES"/>
+                  <list n="security"/>
+                  <value n="wsrm"/>
+               </hash>
+            </hash>
+            <url n="PROXY_ORIGINAL_PORT_ENDPOINT" protocol="https" host="pts-jantt1-training-191.rightnowdemo.com" path="/cgi-bin/pts-jantt1-training-191.cfg/services/soap"/>
+         </hash>
+         <hash n="RightNowSyncPort">
+            <value n="ACCESSES_DOC_WRAPPPED" v="false"/>
+            <value n="ACCESSES_RPC_ENCODED" v="false"/>
+            <value n="CLASS_NAME" v="com.rightnow.ws.wsdl.v1_2.RightNowSyncPort"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyPort"/>
+            <value n="NAME" v="RightNowSyncPort"/>
+            <hash n="OPERATIONS">
+               <hash n="batch">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="convertGenericToObject">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="convertObjectToGeneric">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="create">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="destroy">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="executeMarketingFlow">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="get">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getFileData">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getMetaData">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getMetaDataForClass">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getMetaDataLastChangeTime">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getValuesForNamedID">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getValuesForNamedIDHierarchy">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="queryCSV">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="queryObjects">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="resetContactPassword">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="runAnalyticsReport">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="sendMailingToContact">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="transferSubObjects">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="update">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </hash>
+            <hash n="PROPERTY_GROUPS">
+               <hash n="WS_CLIENT_POLICY">
+                  <value n="addressing"/>
+                  <list n="management"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.policy.PolicyClientModel"/>
+                  <value n="mtom"/>
+                  <hash n="POLICY_OVERRIDE_PROPERTIES"/>
+                  <list n="security">
+                     <string v="oracle/wss_username_token_client_policy"/>
+                  </list>
+                  <value n="wsrm"/>
+               </hash>
+            </hash>
+            <url n="PROXY_ORIGINAL_PORT_ENDPOINT" protocol="https" host="pts-jantt1-training-191.rightnowdemo.com" path="/cgi-bin/pts-jantt1-training-191.cfg/services/soap"/>
+         </hash>
+      </hash>
+      <value n="PROXY_SERVICE_NAME" v="RightNowSyncService"/>
+      <value n="PROXY_SERVICE_NAMESPACE" v="urn:wsdl.ws.rightnow.com/v1_2"/>
+      <url n="PROXY_TARGET_PROJECT" path="../../../../../../Client.jpr"/>
+      <list n="PROXY_WSDL_IMPORT_LIST">
+         <url path="soap_xsd_metadata.xsd"/>
+         <url path="soap_xsd_faults.xsd"/>
+         <url path="soap_xsd_messagestyped.xsd"/>
+         <url path="soap_xsd_objects.xsd"/>
+         <url path="soap_xsd_base.xsd"/>
+         <url path="soap_xsd_nullfields.xsd"/>
+         <url path="soap_xsd_generic.xsd"/>
+      </list>
+      <url n="PROXY_WSDL_URL" path="RightNowSyncService.wsdl"/>
+      <hash n="REFERENCED_WEBSERVICE">
+         <list n="BD_">
+            <hash>
+               <value n="BD_DEFAULT_DOCUMENT_WRAPPED" v="false"/>
+               <value n="BOUND_PORT_TYPE" v="{urn:wsdl.ws.rightnow.com/v1_2}RightNowFedAuthSyncPort"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+               <value n="NAME" v="{urn:wsdl.ws.rightnow.com/v1_2}RightNowFedAuthSyncBinding"/>
+               <list n="OP_BINDINGS">
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.CreateResponseMsg.create.com.rightnow.ws.messages.v1_2.CreateMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetResponseMsg.get.com.rightnow.ws.messages.v1_2.GetMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.UpdateResponseMsg.update.com.rightnow.ws.messages.v1_2.UpdateMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.DestroyResponseMsg.destroy.com.rightnow.ws.messages.v1_2.DestroyMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.QueryObjectsResponseMsg.queryObjects.com.rightnow.ws.messages.v1_2.QueryObjectsMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.QueryCSVResponseMsg.queryCSV.com.rightnow.ws.messages.v1_2.QueryMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.RunAnalyticsReportResponseMsg.runAnalyticsReport.com.rightnow.ws.messages.v1_2.RunAnalyticsReportMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.ExecuteMarketingFlowResponseMsg.executeMarketingFlow.com.rightnow.ws.messages.v1_2.ExecuteMarketingFlowMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetFileDataResponseMsg.getFileData.com.rightnow.ws.messages.v1_2.GetFileDataMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.ResetContactPasswordResponseMsg.resetContactPassword.com.rightnow.ws.messages.v1_2.ResetContactPasswordMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.SendMailingToContactResponseMsg.sendMailingToContact.com.rightnow.ws.messages.v1_2.SendMailingToContactMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.TransferSubObjectsResponseMsg.transferSubObjects.com.rightnow.ws.messages.v1_2.TransferSubObjectsMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.BatchResponseMsg.batch.com.rightnow.ws.messages.v1_2.BatchMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataResponseMsg.getMetaData.com.rightnow.ws.messages.v1_2.GetMetaDataMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataForClassResponseMsg.getMetaDataForClass.com.rightnow.ws.messages.v1_2.GetMetaDataForClassMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataLastChangeTimeResponseMsg.getMetaDataLastChangeTime.com.rightnow.ws.messages.v1_2.GetMetaDataLastChangeTimeMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetValuesForNamedIDResponseMsg.getValuesForNamedID.com.rightnow.ws.messages.v1_2.GetValuesForNamedIDMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetValuesForNamedIDHierarchyResponseMsg.getValuesForNamedIDHierarchy.com.rightnow.ws.messages.v1_2.GetValuesForNamedIDHierarchyMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.ConvertObjectResponseMsg.convertGenericToObject.com.rightnow.ws.messages.v1_2.ConvertObjectMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.ConvertObjectResponseMsg.convertObjectToGeneric.com.rightnow.ws.messages.v1_2.ConvertObjectMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+            </hash>
+            <hash>
+               <value n="BD_DEFAULT_DOCUMENT_WRAPPED" v="false"/>
+               <value n="BOUND_PORT_TYPE" v="{urn:wsdl.ws.rightnow.com/v1_2}RightNowSyncPort"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+               <value n="NAME" v="{urn:wsdl.ws.rightnow.com/v1_2}RightNowSyncBinding"/>
+               <list n="OP_BINDINGS">
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.CreateResponseMsg.create.com.rightnow.ws.messages.v1_2.CreateMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetResponseMsg.get.com.rightnow.ws.messages.v1_2.GetMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.UpdateResponseMsg.update.com.rightnow.ws.messages.v1_2.UpdateMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.DestroyResponseMsg.destroy.com.rightnow.ws.messages.v1_2.DestroyMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.QueryObjectsResponseMsg.queryObjects.com.rightnow.ws.messages.v1_2.QueryObjectsMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.QueryCSVResponseMsg.queryCSV.com.rightnow.ws.messages.v1_2.QueryMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.RunAnalyticsReportResponseMsg.runAnalyticsReport.com.rightnow.ws.messages.v1_2.RunAnalyticsReportMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.ExecuteMarketingFlowResponseMsg.executeMarketingFlow.com.rightnow.ws.messages.v1_2.ExecuteMarketingFlowMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetFileDataResponseMsg.getFileData.com.rightnow.ws.messages.v1_2.GetFileDataMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.ResetContactPasswordResponseMsg.resetContactPassword.com.rightnow.ws.messages.v1_2.ResetContactPasswordMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.SendMailingToContactResponseMsg.sendMailingToContact.com.rightnow.ws.messages.v1_2.SendMailingToContactMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.TransferSubObjectsResponseMsg.transferSubObjects.com.rightnow.ws.messages.v1_2.TransferSubObjectsMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.BatchResponseMsg.batch.com.rightnow.ws.messages.v1_2.BatchMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataResponseMsg.getMetaData.com.rightnow.ws.messages.v1_2.GetMetaDataMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataForClassResponseMsg.getMetaDataForClass.com.rightnow.ws.messages.v1_2.GetMetaDataForClassMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataLastChangeTimeResponseMsg.getMetaDataLastChangeTime.com.rightnow.ws.messages.v1_2.GetMetaDataLastChangeTimeMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetValuesForNamedIDResponseMsg.getValuesForNamedID.com.rightnow.ws.messages.v1_2.GetValuesForNamedIDMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.GetValuesForNamedIDHierarchyResponseMsg.getValuesForNamedIDHierarchy.com.rightnow.ws.messages.v1_2.GetValuesForNamedIDHierarchyMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.ConvertObjectResponseMsg.convertGenericToObject.com.rightnow.ws.messages.v1_2.ConvertObjectMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.rightnow.ws.messages.v1_2.ConvertObjectResponseMsg.convertObjectToGeneric.com.rightnow.ws.messages.v1_2.ConvertObjectMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+            </hash>
+         </list>
+         <list n="BINDING_FILES">
+            <url path="../../../../../../../../../../Service Cloud Partner Training/Technical Training/Supporting Materials/PTSApp.zip" jar-entry="PTSApp/bindings.xml"/>
+         </list>
+         <value n="GUID" v="3ae5f1ec-014b-1000-8002-c0a83801e91d"/>
+         <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy$ProxyJavaWebService"/>
+         <list n="PO_">
+            <hash>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+               <value n="NAME" v="RightNowFedAuthSyncPort"/>
+               <value n="PORT_BINDING_NAME" v="{urn:wsdl.ws.rightnow.com/v1_2}RightNowFedAuthSyncBinding"/>
+               <list n="PORT_OPS">
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.CreateResponseMsg.create.com.rightnow.ws.messages.v1_2.CreateMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetResponseMsg.get.com.rightnow.ws.messages.v1_2.GetMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.UpdateResponseMsg.update.com.rightnow.ws.messages.v1_2.UpdateMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.DestroyResponseMsg.destroy.com.rightnow.ws.messages.v1_2.DestroyMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.QueryObjectsResponseMsg.queryObjects.com.rightnow.ws.messages.v1_2.QueryObjectsMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.QueryCSVResponseMsg.queryCSV.com.rightnow.ws.messages.v1_2.QueryMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.RunAnalyticsReportResponseMsg.runAnalyticsReport.com.rightnow.ws.messages.v1_2.RunAnalyticsReportMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.ExecuteMarketingFlowResponseMsg.executeMarketingFlow.com.rightnow.ws.messages.v1_2.ExecuteMarketingFlowMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetFileDataResponseMsg.getFileData.com.rightnow.ws.messages.v1_2.GetFileDataMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.ResetContactPasswordResponseMsg.resetContactPassword.com.rightnow.ws.messages.v1_2.ResetContactPasswordMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.SendMailingToContactResponseMsg.sendMailingToContact.com.rightnow.ws.messages.v1_2.SendMailingToContactMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.TransferSubObjectsResponseMsg.transferSubObjects.com.rightnow.ws.messages.v1_2.TransferSubObjectsMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.BatchResponseMsg.batch.com.rightnow.ws.messages.v1_2.BatchMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataResponseMsg.getMetaData.com.rightnow.ws.messages.v1_2.GetMetaDataMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataForClassResponseMsg.getMetaDataForClass.com.rightnow.ws.messages.v1_2.GetMetaDataForClassMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataLastChangeTimeResponseMsg.getMetaDataLastChangeTime.com.rightnow.ws.messages.v1_2.GetMetaDataLastChangeTimeMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetValuesForNamedIDResponseMsg.getValuesForNamedID.com.rightnow.ws.messages.v1_2.GetValuesForNamedIDMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetValuesForNamedIDHierarchyResponseMsg.getValuesForNamedIDHierarchy.com.rightnow.ws.messages.v1_2.GetValuesForNamedIDHierarchyMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.ConvertObjectResponseMsg.convertGenericToObject.com.rightnow.ws.messages.v1_2.ConvertObjectMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.ConvertObjectResponseMsg.convertObjectToGeneric.com.rightnow.ws.messages.v1_2.ConvertObjectMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+               <url n="URL" protocol="https" host="pts-jantt1-training-191.rightnowdemo.com" path="/cgi-bin/pts-jantt1-training-191.cfg/services/soap"/>
+            </hash>
+            <hash>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+               <value n="NAME" v="RightNowSyncPort"/>
+               <value n="PORT_BINDING_NAME" v="{urn:wsdl.ws.rightnow.com/v1_2}RightNowSyncBinding"/>
+               <list n="PORT_OPS">
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.CreateResponseMsg.create.com.rightnow.ws.messages.v1_2.CreateMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetResponseMsg.get.com.rightnow.ws.messages.v1_2.GetMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.UpdateResponseMsg.update.com.rightnow.ws.messages.v1_2.UpdateMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.DestroyResponseMsg.destroy.com.rightnow.ws.messages.v1_2.DestroyMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.QueryObjectsResponseMsg.queryObjects.com.rightnow.ws.messages.v1_2.QueryObjectsMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.QueryCSVResponseMsg.queryCSV.com.rightnow.ws.messages.v1_2.QueryMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.RunAnalyticsReportResponseMsg.runAnalyticsReport.com.rightnow.ws.messages.v1_2.RunAnalyticsReportMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.ExecuteMarketingFlowResponseMsg.executeMarketingFlow.com.rightnow.ws.messages.v1_2.ExecuteMarketingFlowMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetFileDataResponseMsg.getFileData.com.rightnow.ws.messages.v1_2.GetFileDataMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.ResetContactPasswordResponseMsg.resetContactPassword.com.rightnow.ws.messages.v1_2.ResetContactPasswordMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.SendMailingToContactResponseMsg.sendMailingToContact.com.rightnow.ws.messages.v1_2.SendMailingToContactMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.TransferSubObjectsResponseMsg.transferSubObjects.com.rightnow.ws.messages.v1_2.TransferSubObjectsMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.BatchResponseMsg.batch.com.rightnow.ws.messages.v1_2.BatchMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataResponseMsg.getMetaData.com.rightnow.ws.messages.v1_2.GetMetaDataMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataForClassResponseMsg.getMetaDataForClass.com.rightnow.ws.messages.v1_2.GetMetaDataForClassMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetMetaDataLastChangeTimeResponseMsg.getMetaDataLastChangeTime.com.rightnow.ws.messages.v1_2.GetMetaDataLastChangeTimeMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetValuesForNamedIDResponseMsg.getValuesForNamedID.com.rightnow.ws.messages.v1_2.GetValuesForNamedIDMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.GetValuesForNamedIDHierarchyResponseMsg.getValuesForNamedIDHierarchy.com.rightnow.ws.messages.v1_2.GetValuesForNamedIDHierarchyMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.ConvertObjectResponseMsg.convertGenericToObject.com.rightnow.ws.messages.v1_2.ConvertObjectMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.rightnow.ws.messages.v1_2.ConvertObjectResponseMsg.convertObjectToGeneric.com.rightnow.ws.messages.v1_2.ConvertObjectMsg.com.rightnow.ws.messages.v1_2.ClientInfoHeader"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+               <url n="URL" protocol="https" host="pts-jantt1-training-191.rightnowdemo.com" path="/cgi-bin/pts-jantt1-training-191.cfg/services/soap"/>
+            </hash>
+         </list>
+         <hash n="PROPERTY_GROUPS">
+            <hash n="WSDL_TO_JAVA_PROPERTIES">
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+               <value n="WSDL2JAVA_UNWRAP_PARAMETERS" v="false"/>
+            </hash>
+         </hash>
+         <list n="PT_">
+            <hash>
+               <value n="AUTO_SERVICE_INTERFACE"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+               <value n="NAME" v="{urn:wsdl.ws.rightnow.com/v1_2}RightNowFedAuthSyncPort"/>
+               <hash n="PROPERTY_GROUPS"/>
+               <value n="PT_CLASS" v="com.rightnow.ws.wsdl.v1_2.RightNowFedAuthSyncPortImpl"/>
+               <value n="PT_SERVICE_INTERFACE" v="com.rightnow.ws.wsdl.v1_2.RightNowFedAuthSyncPort"/>
+            </hash>
+            <hash>
+               <value n="AUTO_SERVICE_INTERFACE"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+               <value n="NAME" v="{urn:wsdl.ws.rightnow.com/v1_2}RightNowSyncPort"/>
+               <hash n="PROPERTY_GROUPS"/>
+               <value n="PT_CLASS" v="com.rightnow.ws.wsdl.v1_2.RightNowSyncPortImpl"/>
+               <value n="PT_SERVICE_INTERFACE" v="com.rightnow.ws.wsdl.v1_2.RightNowSyncPort"/>
+            </hash>
+         </list>
+         <url n="TARGET_PROJECT" path="../../../../../../Client.jpr"/>
+         <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+         <value n="WS_TARGET_NAMESPACE" v="urn:wsdl.ws.rightnow.com/v1_2"/>
+         <value n="WS_URI" v="RightNowSyncService"/>
+         <url n="WS_WSDL_FILE" path="RightNowSyncService.wsdl"/>
+      </hash>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <value n="USE_WSDL_LOCATION" v="true"/>
+   </hash>
+</jdevws:WebServiceProxy>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.10.8" id="untitled1PageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="AllAllTablesView1" RangeSize="25" DataControl="AppModuleDataControl"
+              id="AllAllTablesView1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Owner">
+      <AttrNames>
+        <Item Value="Owner"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="TableName">
+      <AttrNames>
+        <Item Value="TableName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="TablespaceName">
+      <AttrNames>
+        <Item Value="TablespaceName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="ClusterName">
+      <AttrNames>
+        <Item Value="ClusterName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="IotName">
+      <AttrNames>
+        <Item Value="IotName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Status">
+      <AttrNames>
+        <Item Value="Status"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="PctFree">
+      <AttrNames>
+        <Item Value="PctFree"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="PctUsed">
+      <AttrNames>
+        <Item Value="PctUsed"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="IniTrans">
+      <AttrNames>
+        <Item Value="IniTrans"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="MaxTrans">
+      <AttrNames>
+        <Item Value="MaxTrans"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="InitialExtent">
+      <AttrNames>
+        <Item Value="InitialExtent"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="NextExtent">
+      <AttrNames>
+        <Item Value="NextExtent"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="MinExtents">
+      <AttrNames>
+        <Item Value="MinExtents"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="MaxExtents">
+      <AttrNames>
+        <Item Value="MaxExtents"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="PctIncrease">
+      <AttrNames>
+        <Item Value="PctIncrease"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Freelists">
+      <AttrNames>
+        <Item Value="Freelists"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="FreelistGroups">
+      <AttrNames>
+        <Item Value="FreelistGroups"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Logging">
+      <AttrNames>
+        <Item Value="Logging"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="BackedUp">
+      <AttrNames>
+        <Item Value="BackedUp"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="NumRows">
+      <AttrNames>
+        <Item Value="NumRows"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Blocks">
+      <AttrNames>
+        <Item Value="Blocks"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="EmptyBlocks">
+      <AttrNames>
+        <Item Value="EmptyBlocks"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="AvgSpace">
+      <AttrNames>
+        <Item Value="AvgSpace"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="ChainCnt">
+      <AttrNames>
+        <Item Value="ChainCnt"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="AvgRowLen">
+      <AttrNames>
+        <Item Value="AvgRowLen"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="AvgSpaceFreelistBlocks">
+      <AttrNames>
+        <Item Value="AvgSpaceFreelistBlocks"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="NumFreelistBlocks">
+      <AttrNames>
+        <Item Value="NumFreelistBlocks"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Degree">
+      <AttrNames>
+        <Item Value="Degree"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Instances">
+      <AttrNames>
+        <Item Value="Instances"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Cache">
+      <AttrNames>
+        <Item Value="Cache"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="TableLock">
+      <AttrNames>
+        <Item Value="TableLock"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="SampleSize">
+      <AttrNames>
+        <Item Value="SampleSize"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="LastAnalyzed">
+      <AttrNames>
+        <Item Value="LastAnalyzed"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Partitioned">
+      <AttrNames>
+        <Item Value="Partitioned"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="IotType">
+      <AttrNames>
+        <Item Value="IotType"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="ObjectIdType">
+      <AttrNames>
+        <Item Value="ObjectIdType"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="TableTypeOwner">
+      <AttrNames>
+        <Item Value="TableTypeOwner"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="TableType">
+      <AttrNames>
+        <Item Value="TableType"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Temporary">
+      <AttrNames>
+        <Item Value="Temporary"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Secondary">
+      <AttrNames>
+        <Item Value="Secondary"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Nested">
+      <AttrNames>
+        <Item Value="Nested"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="BufferPool">
+      <AttrNames>
+        <Item Value="BufferPool"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="FlashCache">
+      <AttrNames>
+        <Item Value="FlashCache"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="CellFlashCache">
+      <AttrNames>
+        <Item Value="CellFlashCache"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="RowMovement">
+      <AttrNames>
+        <Item Value="RowMovement"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="GlobalStats">
+      <AttrNames>
+        <Item Value="GlobalStats"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="UserStats">
+      <AttrNames>
+        <Item Value="UserStats"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Duration">
+      <AttrNames>
+        <Item Value="Duration"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="SkipCorrupt">
+      <AttrNames>
+        <Item Value="SkipCorrupt"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Monitoring">
+      <AttrNames>
+        <Item Value="Monitoring"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="ClusterOwner">
+      <AttrNames>
+        <Item Value="ClusterOwner"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Dependencies">
+      <AttrNames>
+        <Item Value="Dependencies"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Compression">
+      <AttrNames>
+        <Item Value="Compression"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="CompressFor">
+      <AttrNames>
+        <Item Value="CompressFor"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="Dropped">
+      <AttrNames>
+        <Item Value="Dropped"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AllAllTablesView1Iterator" id="SegmentCreated">
+      <AttrNames>
+        <Item Value="SegmentCreated"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="AllAllTablesView1Iterator" id="First" RequiresUpdateModel="true" Action="first"/>
+    <action IterBinding="AllAllTablesView1Iterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
+    <action IterBinding="AllAllTablesView1Iterator" id="Next" RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="AllAllTablesView1Iterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+  </bindings>
+</pageDefinition>

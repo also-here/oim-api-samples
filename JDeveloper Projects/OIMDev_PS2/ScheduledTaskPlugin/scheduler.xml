@@ -1,0 +1,12 @@
+<scheduledTasks xmlns="http://xmlns.oracle.com/oim/scheduler">
+    <task>
+        <name>DisableUsers_scheduled_task</name>
+        <class>oim.ps2.development.scheduledtask.DisableUsers</class>
+        <description>Scheduler to disable the users in a file</description>
+        <retry>5</retry>
+        <parameters>
+            <string-param required="true" encrypted="false" helpText="CSV Location">CSV Location</string-param>
+            <string-param required="true" encrypted="false" helpText="File Delimiter">File Delimiter</string-param>
+        </parameters>
+    </task>
+</scheduledTasks>
